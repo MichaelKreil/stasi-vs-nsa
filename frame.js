@@ -15,8 +15,8 @@ function init() {
 
 	map.setView(startCoordinates, 16)
 
-	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-	//L.tileLayer('http://tiles.odcdn.de/planet/{z}/{x}/{y}.png', {
+	//L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+	L.tileLayer('//cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png', {
 		maxZoom: 18,
 		attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
 		zoomAnimation: true
